@@ -12,6 +12,9 @@
 6. Benjamin Saunders @https://github.com/BensOnPluto
 
 ## Dataset Description
+**Dataset selected:** EPA Clean Air Markets Program (CAMD) — Power Plant Emissions Unit Registry
+This dataset was selected because it sits at the intersection of environmental policy and energy infrastructure. It covers real, regulated power generation units in the United States and contains enough technical and operational detail to support meaningful analytical questions about pollution control, fuel type, and regulatory compliance over time, which are all topics with genuine public health and policy relevance.
+
 - Provider: U.S. Environmental Protection Agency (EPA)
 - Marketplace Listing Name: SNOWFLAKE_PUBLIC_DATA_FREE.PUBLIC_DATA_FREE.EPA_CAM_PLANT_UNIT_INDEX
 - Tables: 1
