@@ -12,11 +12,11 @@
 6. Benjamin Saunders @https://github.com/BensOnPluto
 
 ## Dataset Description
-Provider: U.S. Environmental Protection Agency (EPA)
-Marketplace Listing Name: SNOWFLAKE_PUBLIC_DATA_FREE.PUBLIC_DATA_FREE.EPA_CAM_PLANT_UNIT_INDEX
-Tables: 1
-Row Count: 6,768 rows (each row = one combustion unit at a power plant)
-Key Columns & Data Types: 
+- Provider: U.S. Environmental Protection Agency (EPA)
+- Marketplace Listing Name: SNOWFLAKE_PUBLIC_DATA_FREE.PUBLIC_DATA_FREE.EPA_CAM_PLANT_UNIT_INDEX
+- Tables: 1
+- Row Count: 6,768 rows (each row = one combustion unit at a power plant)
+- Key Columns & Data Types: 
 ## Questions and Justification
 ## Data Manipulations
 ## Analysis and Results
