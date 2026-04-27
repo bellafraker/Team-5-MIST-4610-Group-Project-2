@@ -42,5 +42,19 @@ This chart shows the percentage of currently operating units with SO₂, NOₓ, 
 This scatter plot plots each operating unit by its age against the number of pollution controls it has installed (0–3), colored by fuel type. If older units cluster toward the bottom of the chart with lower control counts, it supports the grandfathering hypothesis — that plants built before modern regulations were enacted never had to retrofit. A random distribution would suggest age alone does not determine control equipment, and that other factors like fuel type or state-level regulation matter more.
 
 ## Data Manipulations
-## Analysis and Results
-## Streamlit App
+**Question 1 Changes:**  
+They’re both correct and both bar graphs, but Claude AI suggested reorganizing the axes for the Streamlit version by grouping structure to improve interpretability. In the original, fuel types were displayed on a primary categorical axis, while pollution control percentages were grouped in a way that made comparisons between the controls harder to interpret. Claude suggested reorganizing the visualization so that control type became the primary axis, and fuel types became the comparison.  
+This change improved the chart by making it easier for viewers to directly compare how coal, diesel oil, and pipeline natural gas units differ per unique pollution control category. Instead of scanning across separate fuel-type groupings to compare technologies, users could now evaluate control types individually and assess adoption rates.  
+**Question 2 Changes:**  
+
+
+## Analysis and Results  
+<img width="788" height="663" alt="Screenshot 2026-04-27 at 4 45 11 PM" src="https://github.com/user-attachments/assets/f2a51afd-7bc2-4511-a2b6-319cb9e0f1dc" />  
+
+<img width="777" height="677" alt="Screenshot 2026-04-27 at 4 45 34 PM" src="https://github.com/user-attachments/assets/6c271d17-21ee-4d21-bc05-64676c5104eb" />
+
+## Streamlit App  
+<img width="1224" height="684" alt="Screenshot 2026-04-27 at 4 47 00 PM" src="https://github.com/user-attachments/assets/9dc21071-4149-4e02-822c-22ac71242a0b" />  
+<img width="1226" height="695" alt="Screenshot 2026-04-27 at 4 47 43 PM" src="https://github.com/user-attachments/assets/dd815aaf-ebfb-496a-a437-089feb0cb809" />
+
+
