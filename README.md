@@ -34,7 +34,7 @@ This dataset was selected because it sits at the intersection of environmental p
 **Why it's interesting:** Older coal and diesel units were grandfathered under earlier, weaker regulations, so they sometimes operate with less scrubbing infrastructure than newer units. This question gets at a well-documented tension in environmental policy: units that were supposed to be temporary have sometimes operated for 50+ years, and their emissions profile may reflect the era they were built in rather than current standards.
 ## Snowsight Dashboard
 **Question 1:**  
-<img width="1204" height="381" alt="Screenshot 2026-04-27 at 11 45 11 AM" src="https://github.com/user-attachments/assets/f22e1755-eae9-4e5e-ba0d-e728fb90610e" />  
+<img width="802" height="499" alt="Screenshot 2026-04-27 at 5 11 06 PM" src="https://github.com/user-attachments/assets/3f8e0887-e416-4168-bf94-829126d70cc1" />
 This chart shows the percentage of currently operating units with SO₂, NOₓ, and PM controls installed, broken down by fuel type. Coal units are expected to have the highest rates given their stricter regulatory requirements under the Acid Rain Program and MATS. If natural gas or diesel units show comparable rates, it may indicate that control installation is driven by plant age or regional policy rather than fuel type alone.  
 
 **Question 2:**  
