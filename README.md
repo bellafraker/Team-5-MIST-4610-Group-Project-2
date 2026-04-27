@@ -31,6 +31,14 @@ This dataset was selected because it sits at the intersection of environmental p
 **Relevant columns:** COMMERCIAL_OPERATION_DATE, OPERATING_STATUS, UNIT_TYPE, SO2_CONTROL_INFO, NOX_CONTROL_INFO, TOTAL_REPORT_DATES  
 **Why it's non-trivial:** It requires computing unit age from COMMERCIAL_OPERATION_DATE relative to today, filtering to only currently Operating units, and then cross-referencing control technology columns which contain free-text descriptions to assess whether older units have simpler (or absent) control stacks. It combines date arithmetic, filtering, and qualitative text parsing.  
 **Why it's interesting:** Older coal and diesel units were grandfathered under earlier, weaker regulations, so they sometimes operate with less scrubbing infrastructure than newer units. This question gets at a well-documented tension in environmental policy: units that were supposed to be temporary have sometimes operated for 50+ years, and their emissions profile may reflect the era they were built in rather than current standards.
+## Snowsight Dashboard
+**Question 1:**  
+<img width="1204" height="381" alt="Screenshot 2026-04-27 at 11 45 11 AM" src="https://github.com/user-attachments/assets/f22e1755-eae9-4e5e-ba0d-e728fb90610e" />  
+This chart shows the percentage of currently operating units with SO₂, NOₓ, and PM controls installed, broken down by fuel type. Coal units are expected to have the highest rates given their stricter regulatory requirements under the Acid Rain Program and MATS. If natural gas or diesel units show comparable rates, it may indicate that control installation is driven by plant age or regional policy rather than fuel type alone.  
+
+**Question 2:**  
+<img width="807" height="508" alt="Screenshot 2026-04-27 at 11 48 10 AM" src="https://github.com/user-attachments/assets/f4bd3159-eacb-494f-81cf-4c595e2341c1" />  
+This scatter plot plots each operating unit by its age against the number of pollution controls it has installed (0–3), colored by fuel type. If older units cluster toward the bottom of the chart with lower control counts, it supports the grandfathering hypothesis — that plants built before modern regulations were enacted never had to retrofit. A random distribution would suggest age alone does not determine control equipment, and that other factors like fuel type or state-level regulation matter more.
 
 ## Data Manipulations
 ## Analysis and Results
