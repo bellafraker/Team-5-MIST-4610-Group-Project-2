@@ -19,7 +19,9 @@ This dataset was selected because it sits at the intersection of environmental p
 - Marketplace Listing Name: SNOWFLAKE_PUBLIC_DATA_FREE.PUBLIC_DATA_FREE.EPA_CAM_PLANT_UNIT_INDEX
 - Tables: 1
 - Row Count: 6,768 rows (each row = one combustion unit at a power plant)
-- Key Columns & Data Types: 
+- Key Columns & Data Types:
+![Uploading Screenshot 2026-04-27 at 11.16.23 AM.png…]()
+
 ## Questions and Justification
 ## Data Manipulations
 ## Analysis and Results
