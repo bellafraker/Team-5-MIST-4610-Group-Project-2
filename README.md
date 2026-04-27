@@ -20,8 +20,7 @@ This dataset was selected because it sits at the intersection of environmental p
 - Tables: 1
 - Row Count: 6,768 rows (each row = one combustion unit at a power plant)
 - Key Columns & Data Types:
-![Uploading Screenshot 2026-04-27 at 11.16.23 AM.png…]()
-
+<img width="683" height="363" alt="Screenshot 2026-04-27 at 11 17 08 AM" src="https://github.com/user-attachments/assets/70fc1981-bf19-45ea-8fb5-96593efd12f8" /> 
 ## Questions and Justification
 ## Data Manipulations
 ## Analysis and Results
