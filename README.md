@@ -21,6 +21,7 @@ This dataset was selected because it sits at the intersection of environmental p
 - Row Count: 6,768 rows (each row = one combustion unit at a power plant)
 - Key Columns & Data Types:
 <img width="695" height="479" alt="Screenshot 2026-04-27 at 4 39 11 PM" src="https://github.com/user-attachments/assets/810e09dd-c06a-4b0e-91e0-ee208925a472" />
+
 ## Questions and Justification
 **Question 1:** How does the combination of pollution control technologies (SO₂, NOₓ, and PM) differ across fuel types, and are coal units consistently better-equipped than natural gas or diesel units?  
 **Relevant columns:** PRIMARY_FUEL_INFO, SO2_CONTROL_INFO, NOX_CONTROL_INFO, PM_CONTROL_INFO, OPERATING_STATUS  
