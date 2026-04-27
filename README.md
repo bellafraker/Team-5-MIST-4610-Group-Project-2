@@ -7,7 +7,7 @@
 1. Bella Fraker @https://github.com/bellafraker
 2. Tim Adewoye @https://github.com/timiadewoye
 3. Yachana Shah @https://github.com/tree-tee-tea
-4. Lauren Cushings @https://github.com/laurencushing
+4. Lauren Cushing @https://github.com/laurencushing
 5. Brandon Sevel @https://github.com/BrandonSevel
 6. Benjamin Saunders @https://github.com/BensOnPluto
 
