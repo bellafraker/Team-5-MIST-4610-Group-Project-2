@@ -74,12 +74,12 @@ one fuel type lets you focus the analysis on the remaining ones without visual n
 
 **Age Range Slider:** Filters the scatter plot to a specific range of unit ages (e.g., 50–100 
 years only). This directly serves Question 2 by letting users zoom into the oldest operating 
-plants and assess whether they cluster at 0 controls — the central claim of the grandfathering 
+plants and assess whether they cluster at 0 controls, the central claim of the grandfathering 
 hypothesis.
 
 **AI Assistance:** Claude AI was used to write and improve the Streamlit app. Prompts were 
 given to restructure the Question 1 query into long format, fix the Question 2 aggregation 
-issue, and add the sidebar filters. The axis labels, interpretation text, and melt logic were 
+issue, and add the sidebar filters. The axis labels, interpretation text, and logic were 
 suggested by Claude and kept as-is. The fuel type multiselect and age slider were both 
 Claude suggestions that were evaluated and accepted because they added genuine analytical 
 value beyond cosmetic changes.
