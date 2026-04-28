@@ -69,7 +69,7 @@ The Streamlit app reproduces both visualizations from the Snowsight dashboard wi
 meaningful interactive filters in the sidebar:
 
 **Fuel Type Multiselect:** Allows users to isolate one or more fuel categories across both 
-charts. This is analytically meaningful because the core question is a comparison — removing 
+charts. This is analytically meaningful because the core question is a comparison and removing 
 one fuel type lets you focus the analysis on the remaining ones without visual noise.
 
 **Age Range Slider:** Filters the scatter plot to a specific range of unit ages (e.g., 50–100 
