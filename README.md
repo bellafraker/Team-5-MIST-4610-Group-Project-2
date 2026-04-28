@@ -12,7 +12,7 @@
 6. Benjamin Saunders @https://github.com/BensOnPluto
 
 ## Dataset Description
-**Dataset selected:** EPA Clean Air Markets Program (CAMD) — Power Plant Emissions Unit Registry
+**Dataset selected:** EPA Clean Air Markets Program (CAMD)- Power Plant Emissions Unit Registry
 This dataset was selected because it sits at the intersection of environmental policy and energy infrastructure. It covers real, regulated power generation units in the United States and contains enough technical and operational detail to support meaningful analytical questions about pollution control, fuel type, and regulatory compliance over time, which are all topics with genuine public health and policy relevance.
 
 - Provider: U.S. Environmental Protection Agency (EPA)
@@ -25,7 +25,7 @@ This dataset was selected because it sits at the intersection of environmental p
 ## Questions and Justification
 **Question 1:** How does the combination of pollution control technologies (SO₂, NOₓ, and PM) differ across fuel types, and are coal units consistently better-equipped than natural gas or diesel units?  
 **Relevant columns:** PRIMARY_FUEL_INFO, SO2_CONTROL_INFO, NOX_CONTROL_INFO, PM_CONTROL_INFO, OPERATING_STATUS  
-**Why it's non-trivial:** You cannot answer this by reading a single column. It requires filtering by fuel type, then parsing and comparing multi-value control technology strings across three separate control columns. A unit may have partial controls — you have to assess completeness across all three dimensions simultaneously.  
+**Why it's non-trivial:** You cannot answer this by reading a single column. It requires filtering by fuel type, then parsing and comparing multi-value control technology strings across three separate control columns. A unit may have partial controls - you have to assess completeness across all three dimensions simultaneously.  
 **Why it's interesting:** Coal is the most heavily regulated fossil fuel in U.S. power generation due to its high emissions profile. This question tests whether the data actually shows coal units carrying more control infrastructure, or whether the regulatory record is uneven. It has real implications for understanding compliance patterns under programs like the Acid Rain Program (ARP) and MATS.  
   
 **Question 2:** Which operating units have been active the longest without retiring, and does age correlate with having fewer or older pollution control technologies?  
