@@ -43,11 +43,16 @@ This chart shows the percentage of currently operating units with SO₂, NOₓ, 
 This scatter plot plots each operating unit by its age against the number of pollution controls it has installed (0–3), colored by fuel type. If older units cluster toward the bottom of the chart with lower control counts, it supports the grandfathering hypothesis — that plants built before modern regulations were enacted never had to retrofit. A random distribution would suggest age alone does not determine control equipment, and that other factors like fuel type or state-level regulation matter more.
 
 ## Data Manipulations
-**Question 1 Changes:**  
-They’re both correct and both bar graphs, but Claude AI suggested reorganizing the axes for the Streamlit version by grouping structure to improve interpretability. In the original, fuel types were displayed on a primary categorical axis, while pollution control percentages were grouped in a way that made comparisons between the controls harder to interpret. Claude suggested reorganizing the visualization so that control type became the primary axis, and fuel types became the comparison.  
-This change improved the chart by making it easier for viewers to directly compare how coal, diesel oil, and pipeline natural gas units differ per unique pollution control category. Instead of scanning across separate fuel-type groupings to compare technologies, users could now evaluate control types individually and assess adoption rates.  
-**Question 2 Changes:**  
 
+**Question 1 Changes:**
+The original Snowsight query returned three separate percentage columns (PCT_HAS_SO2, PCT_HAS_NOX, PCT_HAS_PM) with fuel type as the only grouping. Snowsight misread this structure and used the percentage values themselves as axis categories, producing an unreadable chart. The query was restructured using UNION ALL to produce a long-format table with three columns: FUEL_TYPE, CONTROL_TYPE, and PCT. This allowed the chart to be properly grouped with control type on the X axis and fuel type as the color series.
+
+The Streamlit version further improved this by melting the data in pandas so that SO₂, NOₓ, and PM appear as labeled categories. The grouping change made it easier to directly compare how each fuel type performs on each individual control technology rather than scanning across separate fuel groupings.
+
+**Question 2 Changes:**
+The original Snowsight query used GROUP BY AGE_YEARS with COUNT(), which aggregated all units of the same age into a single data point. This caused the Y axis to reach 400+ instead of showing per-unit control counts, making the chart analytically misleading.
+
+The Streamlit version removes GROUP BY entirely so each row represents one individual unit. A DATEDIFF calculation computes unit age from COMMERCIAL_OPERATION_DATE relative to today, and a CASE statement converts the three binary control columns (SO2_CONTROL_INFO, NOX_CONTROL_INFO, PM_CONTROL_INFO) into a single numeric score (0–3) per unit. This keeps the Y axis at 0–3 and allows each dot on the scatter plot to represent one real power plant.
 
 ## Analysis and Results  
 <img width="788" height="663" alt="Screenshot 2026-04-27 at 4 45 11 PM" src="https://github.com/user-attachments/assets/f2a51afd-7bc2-4511-a2b6-319cb9e0f1dc" />  
@@ -56,9 +61,29 @@ This change improved the chart by making it easier for viewers to directly compa
 
 ## Streamlit App  
 <img width="1224" height="684" alt="Screenshot 2026-04-27 at 4 47 00 PM" src="https://github.com/user-attachments/assets/9dc21071-4149-4e02-822c-22ac71242a0b" /> 
-They’re both correct and both bar graphs, but Claude AI suggested reorganizing the axes for the Streamlit version by grouping structure to improve interpretability. In the original, fuel types were displayed on a primary categorical axis, while pollution control percentages were grouped in a way that made comparisons between the controls harder to interpret. Claude suggested reorganizing the visualization so that control type became the primary axis, and fuel types became the comparison.
-This change improved the chart by making it easier for viewers to directly compare how coal, diesel oil, and pipeline natural gas units differ per unique pollution control category. Instead of scanning across separate fuel-type groupings to compare technologies, users could now evaluate control types individually and assess adoption rates.
-Streamlit introduced interactive filtering by fuel type and unit age range. These filters allow users to explore subsets of the dataset and examine whether pollution control adoption patterns vary by plant age or selected fuel categories. This added deeper analytical usefulness.
 <img width="1585" height="693" alt="Screenshot 2026-04-27 203424" src="https://github.com/user-attachments/assets/a3d663ce-6b91-4bf9-8c0a-4ef442c2f91b" />
-The Streamlit visualization plots each operating unit by its age against the number of pollution controls it has installed (0–3), colored by fuel type. If older units cluster toward the bottom of the chart with lower control counts, it supports the grandfathering hypothesis, that plants built before modern regulations were enacted never had to be retrofitted to meet modern standards. A random distribution would suggest age alone does not determine control equipment, and that other factors like fuel type or state-level regulation matter more. This is very different from the original dashboard, as the original aggregated units of the same age, whereas each dot on the streamlit represents a unique power plant greatly improving the data's readability and usability as Claude AI suggested. The newly added ability to filter by fuel types and unit age range similarly greatly improves the ability to use the data and adds more granularity to what data and insights can be extracted.
+
+The Streamlit app reproduces both visualizations from the Snowsight dashboard with two 
+meaningful interactive filters in the sidebar:
+
+**Fuel Type Multiselect:** Allows users to isolate one or more fuel categories across both 
+charts. This is analytically meaningful because the core question is a comparison — removing 
+one fuel type lets you focus the analysis on the remaining ones without visual noise.
+
+**Age Range Slider:** Filters the scatter plot to a specific range of unit ages (e.g., 50–100 
+years only). This directly serves Question 2 by letting users zoom into the oldest operating 
+plants and assess whether they cluster at 0 controls — the central claim of the grandfathering 
+hypothesis.
+
+**AI Assistance:** Claude AI was used to write and improve the Streamlit app. Prompts were 
+given to restructure the Question 1 query into long format, fix the Question 2 aggregation 
+issue, and add the sidebar filters. The axis labels, interpretation text, and melt logic were 
+suggested by Claude and kept as-is. The fuel type multiselect and age slider were both 
+Claude suggestions that were evaluated and accepted because they added genuine analytical 
+value beyond cosmetic changes.
+
+
+
+
+
 
