@@ -60,7 +60,9 @@ The Streamlit version removes GROUP BY entirely so each row represents one indiv
 <img width="777" height="677" alt="Screenshot 2026-04-27 at 4 45 34 PM" src="https://github.com/user-attachments/assets/6c271d17-21ee-4d21-bc05-64676c5104eb" />
 
 ## Streamlit App  
+Question 1
 <img width="1224" height="684" alt="Screenshot 2026-04-27 at 4 47 00 PM" src="https://github.com/user-attachments/assets/9dc21071-4149-4e02-822c-22ac71242a0b" /> 
+Question 2
 <img width="1585" height="693" alt="Screenshot 2026-04-27 203424" src="https://github.com/user-attachments/assets/a3d663ce-6b91-4bf9-8c0a-4ef442c2f91b" />
 
 The Streamlit app reproduces both visualizations from the Snowsight dashboard with two 
