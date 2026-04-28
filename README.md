@@ -56,6 +56,6 @@ This change improved the chart by making it easier for viewers to directly compa
 
 ## Streamlit App  
 <img width="1224" height="684" alt="Screenshot 2026-04-27 at 4 47 00 PM" src="https://github.com/user-attachments/assets/9dc21071-4149-4e02-822c-22ac71242a0b" />  
-<img width="1226" height="695" alt="Screenshot 2026-04-27 at 4 47 43 PM" src="https://github.com/user-attachments/assets/dd815aaf-ebfb-496a-a437-089feb0cb809" />
+<img width="1585" height="693" alt="Screenshot 2026-04-27 203424" src="https://github.com/user-attachments/assets/a3d663ce-6b91-4bf9-8c0a-4ef442c2f91b" />
 
 
